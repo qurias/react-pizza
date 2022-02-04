@@ -48,8 +48,7 @@ function SortPopup({items}) {
       {visiblePopup && (
         <div className="sort__popup">
           <ul>
-            {items &&
-              items.map((categ, index) => (
+            {items && items.map((categ, index) => (
                 <li
                   onClick={() => onSelectItem(index)}
                   className={activeItem === index ? 'active' : ''}
